@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Canciones</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid pt-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="./imagenes/logo.png" width="30vw" height="30vw" alt="Logo">
+                <span class="text-primary font-weight-bold">OYE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra"
+                aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation" aria-color="danger">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <div class="col-md-6">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="linkInicio" onclick="CargarTop()">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="canciones.html" id="linkCanciones" onclick="CargarTop()">Canciones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-md-6">
+                    <ul class="navbar-nav justify-content-end">
+                        <a type="button" class="btn btn-primary m-1 text-white" data-toggle="modal"
+                            data-target="#ventana" role="button">Contacto</a>
+                        <a class="btn btn-primary m-1" href="./login.html" role="button">Inicio de Sesión</a>
+                        <a class="btn btn-primary m-1" href="./registro.html" role="button">Registro</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bolder">
+                            Contacto
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Cristian Tobar</p>
+                        <p>Email: cristianndres@unicauca.edu.co</p>
+                        <p class="text-primary">Telefonos: +57 3185637944 - +57 3136452017</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary bg-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-2 px-2" id="FondoFiesta">
+        <h4 class="font-weight-bolder">Canciones</h4>
+        
+        
+        <input class="col 12 form-control m-1" 
+                type="text" 
+                placeholder="Buscar..." 
+                id="BuscarCancion"
+        >
+       <div id="contenedorCanciones">
+            <div class="row mx-4 mb-4 mt-2 justify-content-center">
+                <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                    <div>
+                        <img src="./imagenes/icon_4.svg" class="w-25 my-1" id="icono1">
+                    </div>
+                    <div>
+                        <h6 id="Melodia1Name">Diamonds-Rihanna</h6>
+                        <audio class="col-12" src="./canciones/Dyamons.mp3" controls id="melodia1">Cinco</audio>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center my-md-3 m-sm-3" id="Bordear">
+                    <img src="./imagenes/icon_1.svg" class="w-25 my-1" alt="icono" id="icono2">
+                    <div>
+                        <h6 id="Melodia2Name">Ringtone-2021</h6>
+                        <audio class="col-12" src="./canciones/Ringtone_2021.mp3" controls id="melodia2">Cinco</audio>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                    <img src="./imagenes/icon_3.svg" class="w-25 my-1"  id="icono3"
+                    >
+                    <div>
+                        <h6 id="Melodia3Name">Planeta</h6>
+                        <audio class="col-12" src="./canciones/tres.mp3" controls  id="melodia3">Cinco</audio>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-4 justify-content-center">
+                    <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                        <div>
+                            <img src="./imagenes/icon_2.svg" class="w-25 my-1" id="icono4">
+                        </div>
+                        <div>
+                            <h6 id="Melodia4Name">Suave</h6>
+                            <audio class="col-12" src="./canciones/cuatro.mp3" controls id="melodia4">Cinco</audio>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center my-md-3 m-sm-3" id="Bordear">
+                        <img src="./imagenes/icon_4.svg" class="w-25 my-1"  id="icono5">
+                        <div>
+                            <h6 id="Melodia5Name">Contigo</h6>
+                            <audio class="col-12" src="./canciones/cinco.mp3" controls id="melodia5">Cinco</audio>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                        <img src="./imagenes/icon_1.svg" class="w-25 my-1"  id="icono6">
+                        <div>
+                            <h6 id="Melodia6Name">alas</h6>
+                            <audio class="col-md-12" src="./canciones/seis.mp3" controls id="melodia6">Cinco</audio>
+                        </div>
+                    </div>
+            </div>
+            <div class="row m-4 justify-content-center">
+                <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                    <img src="./imagenes/icon_3.svg" class="w-25 my-1"  id="icono7">
+                    <div>
+                        <h6 id="Melodia7Name">verde</h6>
+                        <audio class="col-md-12" src="./canciones/siete.mp3" controls id="melodia7">Cinco</audio>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center my-md-3 m-sm-3" id="Bordear">
+                    <img src="./imagenes/icon_1.svg" class="w-25 my-1"  id="icono8">
+                    <div>
+                        <h6 id="Melodia8Name">nuevamente</h6>
+                        <audio class="col-md-12" src="./canciones/ocho.mp3" controls id="melodia8">Cinco</audio>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mx-md-3 m-sm-3" id="Bordear">
+                    <img src="./imagenes/icon_2.svg" class="w-25 my-1"  id="icono9">
+                    <div>
+                        <h6 id="Melodia9Name">hoy</h6>
+                        <audio class="col-md-12" src="./canciones/nueve.mp3" controls id="melodia9">Cinco</audio>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <footer class="container-fluid border text-white py-2">
+        <div class="row">
+            <div class="d-none d-md-block col-md-6">
+                <span>Comparte la música</span>
+            </div>
+            <div class="col-sm-12 text-center col-md-6 text-md-right ">
+                <span>@Derechos reservados</span>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

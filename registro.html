@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid pt-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="./imagenes/logo.png" width="30vw" height="30vw" alt="Logo">
+                <span class="text-primary font-weight-bold">OYE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra"
+                aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation" aria-color="danger">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <div class="col-md-6">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="linkInicio" onclick="CargarTop()">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="canciones.html" id="linkCanciones" onclick="CargarTop()">Canciones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-md-6">
+                    <ul class="navbar-nav justify-content-end">
+                        <a type="button" class="btn btn-primary m-1 text-white" data-toggle="modal"
+                            data-target="#ventana" role="button">Contacto</a>
+                        <a class="btn btn-primary m-1" href="./login.html" role="button">Inicio de Sesión</a>
+                        <a class="btn btn-primary m-1" href="./registro.html" role="button">Registro</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bolder">
+                            Contacto
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Cristian Tobar</p>
+                        <p>Email: cristianndres@unicauca.edu.co</p>
+                        <p class="text-primary">Telefonos: +57 3185637944 - +57 3136452017</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary bg-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="mainRegisto">
+        <div class="py-5 bg-light">
+            <div class="col-md-6 m-auto">
+                <h4 class="mb-3 font-weight-bolder">Registro</h4>
+                <form class="form-signin" id="FormularioRegistro">
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" class="form-control" id="email" name="correo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="constrasena">Contraseña *</label>
+                        <input type="password" class="form-control" id="constrasena" name="contrasena" />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmacion">Confirmación de contraseña</label>
+                        <input type="password" class="form-control" id="confirmacion" name="confirmacion" />
+                    </div>
+                    <div class="form-group">
+                        <label for="generoMuical">Género musical favorito *</label>
+                        <select class="form-control" id="pais" name="generoMusical">
+                            <option>Seleccionar</option>
+                            <option>Clásica</option>
+                            <option>Disco</option>
+                            <option>Metal</option>
+                            <option>Pop</option>
+                            <option>Techno</option>
+                            <option>Reggaeton</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Edad">Edad *</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="1">
+                            <label for="Menor20">
+                                Menor a 20
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="2">
+                            <label for="de20a40">
+                                20 a 40
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="3">
+                            <label for="Mayor50">
+                                Mayor a 50
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="terminos" name="cajaTexto" />
+                        <label class="form-check-label" for="terminos">
+                            Acepto los términos y condiciones
+                        </label>
+                    </div>
+                    <p class="text-primary pt-2">*Campos obligatorios</p>
+                    <div class="mt-3">
+                        <div class="modal" tabindex="-1" role="dialog" id="ventanaRegistro">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title font-weight-bolder">
+                                            Contacto
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Cristian Tobar</p>
+                                        <p>Email: cristianndres@unicauca.edu.co</p>
+                                        <p class="text-primary">Telefonos: +57 3185637944 - +57 3136452017</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary bg-primary"
+                                            data-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="return validarRegistro(this.form)">Continuar</button>
+                </form>
+                <script src="./js/main.js"></script>
+            </div>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-primary text-white py-2">
+        <div class="row">
+            <div class="d-none d-md-block col-md-6">
+                <span>Comparte la música</span>
+            </div>
+            <div class="col-sm-12 text-center col-md-6 text-md-right ">
+                <span>@Derechos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

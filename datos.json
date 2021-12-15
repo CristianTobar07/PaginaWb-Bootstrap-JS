@@ -1,0 +1,58 @@
+{
+	"canciones": [
+		{
+			"nombre": "Diamonds",
+			"ruta": "./canciones/Dyamons.mp3",
+			"reproducciones": 200,
+			"icono": 4
+		},
+		{
+			"nombre": "Ringtone2021",
+			"ruta": "./canciones/Ringtone_2021.mp3",
+			"reproducciones": 30,
+			"icono": 1
+		},
+		{
+			"nombre": "planeta",
+			"ruta": "./canciones/tres.mp3",
+			"reproducciones": 10,
+			"icono": 3
+		},
+		{
+			"nombre": "suave",
+			"ruta": "./canciones/cuatro.mp3",
+			"reproducciones": 80,
+			"icono": 2
+		},
+		{
+			"nombre": "contigo",
+			"ruta": "./canciones/cinco.mp3",
+			"reproducciones": 50,
+			"icono": 4
+		},
+		{
+			"nombre": "alas",
+			"ruta": "./canciones/seis.mp3",
+			"reproducciones": 70,
+			"icono": 1
+		},
+		{
+			"nombre": "verde",
+			"ruta": "./canciones/siete.mp3",
+			"reproducciones": 60,
+			"icono": 3
+		},
+		{
+			"nombre": "nuevamente",
+			"ruta": "./canciones/ocho.mp3",
+			"reproducciones": 90,
+			"icono": 1
+		},
+		{
+			"nombre": "hoy",
+			"ruta": "./canciones/nueve.mp3",
+			"reproducciones": 40,
+			"icono": 2
+		}
+	]
+}
